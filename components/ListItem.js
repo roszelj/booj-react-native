@@ -39,7 +39,7 @@ export default class ListItem extends Component {
   				<View style={styles.item}>
 
 						{(this.props.data.photo ?
-  					<Image source={{uri: this.props.data.photo}} style={styles.imagem} />
+  					<Image source={{uri: this.props.data.photo}} style={{width:40, height:40, marginTop:10}} imageStyle={styles.imagem} />
 						: ''
 						)}
   					<View style={styles.info}>
@@ -65,9 +65,6 @@ const styles = StyleSheet.create({
 		flexDirection:'row'
 	},
 	imagem:{
-		width:40,
-		height:40,
-		marginTop:10,
 		borderRadius:20
 	},
 	info:{

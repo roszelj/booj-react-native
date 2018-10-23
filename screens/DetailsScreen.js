@@ -1,5 +1,7 @@
 import React from 'react';
-import { ScrollView, TouchableHighlight, StyleSheet,Text, View, Image, Alert, TextInput, TouchableOpacity, ActivityIndicator } from 'react-native';
+import { ScrollView, TouchableHighlight, StyleSheet,Text, View, Alert, TextInput, TouchableOpacity, ActivityIndicator } from 'react-native';
+
+import Image from 'react-native-image-progress';
 
 import { RegularText, BoldText } from '../components/StyledText';
 import call from 'react-native-phone-call'
@@ -106,7 +108,8 @@ export default class DetailsScreen extends React.Component {
            <View style={styles.profileImageContainer}>
             <Image
                  source={{uri: this.state.data.photo}}
-                 style={styles.imagem}
+                 style={{width:200, height:200, marginTop:10}}
+                 imageStyle={{borderRadius:100}}
              />
              <BoldText style={{"paddingTop": 15, "fontSize":20}}>
                {this.state.data.first_name} {this.state.data.last_name}
