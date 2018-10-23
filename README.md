@@ -5,4 +5,4 @@
 - Inital data is loaded to the devices localstorage managing state for later retrival.
 - Detail view press phone number to call realtor.
 - Navigation back to home page.
-- Drag list view down to invoke refresh to fetch fresh api data then store back in localstorge.
+- Drag list view down to invoke refresh to fetch fresh api data then store back in localstorage.
